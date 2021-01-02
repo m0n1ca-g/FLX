@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 20px 0;
+  padding: 0px 0;
   background: #1e4356;
 }
 
@@ -357,6 +357,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  
+  
   bottom: 0;
   top: 0;
   left: 0;
@@ -371,11 +373,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #hero p {
-  width: 80%;
+  width: 100%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #fff;
+  color: #FFF;
 }
 
 #hero .carousel-control-prev, #hero .carousel-control-next {
@@ -525,7 +527,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: -60px 0;
 }
 
 .section-bg {
