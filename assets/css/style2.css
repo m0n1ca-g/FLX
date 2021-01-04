@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444;
+  color: #0D2735;
 }
 
 a {
@@ -347,8 +347,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Why Us
 --------------------------------------------------------------*/
 .why-us .container {
-  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
-  background: rgb(215, 231, 252);
+  box-shadow: 0 5px 25px 0 rgba(7, 48, 90, 0.6);
+  background: #0D2735;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  }
 }
 
 .why-us .icon-box + .icon-box {
@@ -368,12 +372,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .why-us .icon-box .icon i {
-  color: #68A4C4;
+  color: #9dff00;
   font-size: 32px;
 }
 
 .why-us .icon-box:hover .icon {
-  background: #68A4C4;
+  background: #fff;
 }
 
 .why-us .icon-box:hover .icon i {
@@ -389,12 +393,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .why-us .icon-box .title a {
-  color: #343a40;
+  color: #fff;
   transition: 0.3s;
 }
 
 .why-us .icon-box .title a:hover {
-  color: #68A4C4;
+  color: #fff;
 }
 
 .why-us .icon-box .description {
@@ -415,7 +419,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .why-us .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#68A4C4 50%, rgba(104, 164, 196, 0.4) 52%);
+  background: radial-gradient(#68A4C4 50%, rgba(1, 20, 31, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
