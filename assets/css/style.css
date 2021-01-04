@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .back-to-top:hover {
-  color: #fff;
+  color: fff;
   background: #85b6cf;
   transition: background 0.2s ease-in-out;
 }
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 60px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -75,13 +75,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #header.header-scrolled {
   background: rgba(30, 67, 86, 0.8);
   height: 60px;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 #header .logo h1 {
-  font-size: 28px;
+  font-size: 8px;
   margin: 0;
-  padding: 4px 0;
+  padding: 2px 0;
   line-height: 1;
   font-weight: 400;
   letter-spacing: 3px;
@@ -107,100 +107,98 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.nav-menu ul {
+.nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.nav-menu > ul {
-  display: flex;
-}
+
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
-  padding: 10px 0 10px 28px;
+  float: left;
 }
+
 .nav-menu a {
   display: block;
   position: relative;
   color: #fff;
+  padding: 10px 15px;
   transition: 0.3s;
-  font-size: 15px;
-  font-family: “Open Sans”, sans-serif;
-  font-weight: 600;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
 }
+
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #000000;
+  color: #a2cce3;
+  text-decoration: none;
 }
-.nav-menu .account_menu ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  padding: 0;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(128, 0, 51, 0.25);
-  transition: 0.3s;
-}
+
 .nav-menu .drop-down ul {
   display: block;
   position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
+  left: 0;
+  top: calc(100% - 30px);
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  padding: 0;
+  padding: 10px 0;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(75, 68, 70, 0.25);
-  transition: 0.3s;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
 }
+
 .nav-menu .drop-down:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
+
 .nav-menu .drop-down li {
   min-width: 180px;
   position: relative;
 }
+
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #151515;
+  color: #1c3745;
 }
+
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #151515;
-  background: #D6B2C0;
+  color: #68A4C4;
 }
+
 .nav-menu .drop-down > a:after {
-  content: “\ea99";
+  content: "\ea99";
   font-family: IcoFont;
   padding-left: 5px;
 }
+
 .nav-menu .drop-down .drop-down ul {
   top: 0;
   left: calc(100% - 30px);
 }
+
 .nav-menu .drop-down .drop-down:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
 }
+
 .nav-menu .drop-down .drop-down > a {
   padding-right: 35px;
 }
+
 .nav-menu .drop-down .drop-down > a:after {
-  content: “\eaa0”;
+  content: "\eaa0";
   font-family: IcoFont;
   position: absolute;
   right: 15px;
 }
+
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
@@ -209,7 +207,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     left: -100%;
   }
   .nav-menu .drop-down .drop-down > a:after {
-    content: “\ea9d”;
+    content: "\ea9d";
   }
 }
 
@@ -319,9 +317,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 --------------------------------------------------------------*/
 #hero {
   width: auto;
-  height: 90vh;
-  overflow: hidden;
-  position: relative;
+  height: 75vh;
+  overflow: initial;
+  position: absolute;
 }
 
 #hero::after {
@@ -330,10 +328,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: 50%;
   top: 0;
   width: 130%;
-  height: 95%;
+  height: 100%;
   background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
   z-index: 0;
-  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 0% 0%;
   transform: translateX(-50%) rotate(0deg);
 }
 
@@ -352,7 +350,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #hero .carousel-container {
-  display: flex;
+  display:-moz-stack;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -367,7 +365,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #hero h2 {
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 48px;
   font-weight: 700;
 }
@@ -376,7 +374,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   width: 100%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 0px auto;
   color: #FFF;
 }
 
@@ -386,7 +384,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
   background: none;
-  font-size: 48px;
+  font-size: 98px;
   line-height: 1;
   width: auto;
   height: auto;
@@ -491,7 +489,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #hero-no-slider p {
-  color: #fff;
+  color: #FFF;
 }
 
 #hero-no-slider .btn-get-started {
@@ -720,8 +718,8 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us .container {
-  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
-  background: #fff;
+  box-shadow: 0 5px 25px 0 rgba(101, 165, 230, 0.6);
+  background: rgb(159, 189, 228);
 }
 
 .why-us .icon-box + .icon-box {
@@ -741,12 +739,12 @@ section {
 }
 
 .why-us .icon-box .icon i {
-  color: #68A4C4;
+  color: #fff;
   font-size: 32px;
 }
 
 .why-us .icon-box:hover .icon {
-  background: #68A4C4;
+  background: #fff;
 }
 
 .why-us .icon-box:hover .icon i {
@@ -762,12 +760,12 @@ section {
 }
 
 .why-us .icon-box .title a {
-  color: #343a40;
+  color: #fff;
   transition: 0.3s;
 }
 
 .why-us .icon-box .title a:hover {
-  color: #68A4C4;
+  color: #fff;
 }
 
 .why-us .icon-box .description {
@@ -788,7 +786,7 @@ section {
 .why-us .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#68A4C4 50%, rgba(104, 164, 196, 0.4) 52%);
+  background: radial-gradient(#68A4C4 50%, rgba(187, 227, 248, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -2367,8 +2365,54 @@ section {
   object-fit: cover;
 }
 
+.top-buffer { margin-top:20px; }
 
+card-mg {
+  max-width: 300px;
+  max-height: 200px;
+}
 
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #444;
+  transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+  color: #428bca;
+}
+
+#topbar .contact-info i {
+  color: #428bca;
+  padding: 4px;
+}
+
+#topbar .contact-info .icofont-phone {
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+#topbar .social-links a {
+  color: #5c768d;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color: #428bca;
+}
 
 /*--------------------------------------------------------------
 # Anaam's Custom CSS
