@@ -746,7 +746,7 @@ card-mg {
 
 /* Large rounded blue border */
 hr.new5 {
-  border: 2px dashed #0b212d;
+  border: 2px solid #0b212d;
   border-radius: 65px;
 }
 
