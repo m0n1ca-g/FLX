@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>FLX by Kohl's</title>
+    <title>FLX by Kohl's - Cart</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -66,9 +66,9 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li class="drop-down"><a href="">Account</a>
             <ul>
-              <li class="drop-down"><a href="signin.html">Sign In</a>
+              <li><a href="signin.html">Sign In</a>
                 </li>
-              <li class="drop-down"><a href="signin.html">Create an Account</a></li></ul>
+              <li><a href="signin.html">Create an Account</a></li></ul>
               <li class="drop-down"><a href="">Shop</a><ul>
               <li class="drop-down"><a href="#">Men</a><ul>
                 <li><a href="men.html">Bottoms</a></li>
@@ -100,151 +100,170 @@
 
   <main id="main">
     <!--Section: Block Content-->
-    <section>
-        <div class="signUp" style="width: 18rem;">
-            <h4>Do you have a Kohl's account with us?</h4>
-            <a class="btn btn-primary" href="#" role="button">Sign In</a>
-            <h6>Don't have an account? Create one!</h6>
-            <a class="btn btn-primary" href="#" role="button">Sign Up</a>
-        </div>
-      <div class="container px-4 py-5 mx-auto">
-        <div class="row d-flex justify-content-center">
-            <div class="col-5">
-                <h4 class="heading">Shopping Bag</h4>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a>Shopping Cart</a>
+            </li>
+          </ol>
+        </nav>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="col-md-6"></div>
+              <div class="col-md-6">
+              <img src="assets/img/Kohls_Charge_Image2x copy.png"
+              <p>
+                Do you have a Kohl's account with us?
+              </p> 
+              <button type="button" class="btn btn-success">
+                Sign In
+              </button>
+              <br>
+              <br>
+              <P>Don't have an account? <strong>Create one!</strong></p>
+              <button type="button" class="btn btn-success">
+                Sign up
+              </button>
+              </div>
             </div>
-            <div class="col-7">
-                <div class="row text-right">
-                    <div class="col-4">
-                        <h6 class="mt-2">Format</h6>
-                    </div>
-                    <div class="col-4">
-                        <h6 class="mt-2">Quantity</h6>
-                    </div>
-                    <div class="col-4">
-                        <h6 class="mt-2">Price</h6>
-                    </div>
+            <div class="col-md-6">
+              <h2>
+                Shopping Cart
+              </h2>
+              <br>
+              <div class="row">
+                <div class="col-md-3">
+                  <h5>
+                    Item 
+                  </h5>
                 </div>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center border-top">
-            <div class="col-5">
-                <div class="row d-flex">
-                    <div class="book"> <img src="https://i.imgur.com/2DsA49b.jpg" class="book-img"> </div>
-                    <div class="my-auto flex-column d-flex pad-left">
-                        <h6 class="mob-text">Thinking, Fast and Slow</h6>
-                        <p class="mob-text">Daniel Kahneman</p>
-                    </div>
+                <div class="col-md-3">
+                  <h5>
+                    Size and Color
+                  </h5>
                 </div>
-            </div>
-            <div class="my-auto col-7">
-                <div class="row text-right">
-                    <div class="col-4">
-                        <p class="mob-text">Digital</p>
-                    </div>
-                    <div class="col-4">
-                        <div class="row d-flex justify-content-end px-3">
-                            <p class="mb-0" id="cnt1">1</p>
-                            <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span> <span class="vsm-text minus">-</span> </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <h6 class="mob-text">$9.99</h6>
-                    </div>
+                <div class="col-md-3">
+                  <h5>
+                    Quanity
+                  </h5>
                 </div>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center border-top">
-            <div class="col-5">
-                <div class="row d-flex">
-                    <div class="book"> <img src="https://i.imgur.com/Oj1iQUX.jpg" class="book-img"> </div>
-                    <div class="my-auto flex-column d-flex pad-left">
-                        <h6 class="mob-text">Homo Deus: A Brief<br>History of Tomorrow</h6>
-                        <p class="mob-text">Yuval Noah Harari</p>
-                    </div>
+                <div class="col-md-3">
+                  <h4>
+                    Price
+                  </h4>
                 </div>
-            </div>
-            <div class="my-auto col-7">
-                <div class="row text-right">
-                    <div class="col-4">
-                        <p class="mob-text">Paperback</p>
-                    </div>
-                    <div class="col-4">
-                        <div class="row d-flex justify-content-end px-3">
-                            <p class="mb-0" id="cnt2">1</p>
-                            <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span> <span class="vsm-text minus">-</span> </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <h6 class="mob-text">$13.50</h6>
-                    </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-3">
+                  <h6 class="text-center">
+                    Fleece Zippered Hoodie
+                  </h6>
+                  <img class="card-img-top" src="assets/img/m1.JPG"/>
+                  
                 </div>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center border-top">
-            <div class="col-5">
-                <div class="row d-flex">
-                    <div class="book"> <img src="https://i.imgur.com/2DsA49b.jpg" class="book-img"> </div>
-                    <div class="my-auto flex-column d-flex pad-left">
-                        <h6 class="mob-text">Thinking, Fast and Slow</h6>
-                        <p class="mob-text">Daniel Kahneman</p>
-                    </div>
+                <div class="col-md-3">
+                  <p>
+                    Large, Red
+                  </p>
                 </div>
-            </div>
-            <div class="my-auto col-7">
-                <div class="row text-right">
-                    <div class="col-4">
-                        <p class="mob-text">Digital</p>
-                    </div>
-                    <div class="col-4">
-                        <div class="row d-flex justify-content-end px-3">
-                            <p class="mb-0" id="cnt1">1</p>
-                            <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span> <span class="vsm-text minus">-</span> </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <h6 class="mob-text">$9.99</h6>
-                    </div>
+                <div class="col-md-3">
+                  <p>
+                    1
+                  </p>
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="row">
-                        <div class="col-lg-4 mt-2">
-                            <div class="row d-flex justify-content-between px-4">
-                                <p class="mb-1 text-left">Subtotal</p>
-                                <h6 class="mb-1 text-right">$23.49</h6>
-                            </div>
-                            <div class="row d-flex justify-content-between px-4">
-                                <p class="mb-1 text-left">Shipping</p>
-                                <h6 class="mb-1 text-right">$2.99</h6>
-                            </div>
-                            <div class="row d-flex justify-content-between px-4" id="tax">
-                                <p class="mb-1 text-left">Total (tax included)</p>
-                                <h6 class="mb-1 text-right">$26.48</h6>
-                            </div> 
-                            <a href="checkout.html"> <button class="btn-block btn-blue"><span> <span id="checkout">Checkout</span> <span id="check-amt">$26.48</span> </span> </button></a>
-                        </div>
-                    </div>
+                <div class="col-md-3">
+                  <p>
+                    $32.55
+                  </p>
                 </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-3">
+                  <h6 class="text-center">
+                   Joggers
+                  </h6>
+                  <img class="card-img-top" src="assets/img/m7.JPG"/>
+                  
+                </div>
+                <div class="col-md-3">
+                  <p>
+                    Large, Black
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <p>
+                    1
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <p>
+                    $15.00
+                  </p>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-md-3">
+                  <h6 class="text-center">
+                   Casual Long-Sleeve
+                  </h6>
+                  <img class="card-img-top" src="assets/img/w1.JPG"/>
+                  
+                </div>
+                <div class="col-md-3">
+                  <p>
+                    Medium, Purple
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <p>
+                    1
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <p>
+                    $32.55
+                  </p>
+                </div>
+              </div>
+              <br>
+              <div id="lol" class="row">
+                <div class="col-md-6">
+                  <p>
+                    Subtotal
+                  </p> 
+                  <p>Shipping</p>
+                  <p>Tax</p>
+                  <p><strong>Total (tax included)</strong></p>
+                  <button type="button" class="btn btn-success">
+                    Check out $20.99
+                  </button>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    $80.10
+                  </p> 
+                  <p>Free</p>
+                  <p>$12.05</p>
+                  <p><strong>$92.11</strong></p>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;" id="chargecard">
-        <img src="assets/img/Kohls_Charge_Image2x copy.png" class="card-img-top" alt="Kohl's Charge Card">
-        <div class="card-body">
-          <h5 class="card-title">Kohl's Credit Card</h5>
-          <p class="card-text">See if you prequalify for a Kohl's Charge today with no impact on your credit score! </p>
-          <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
         </div>
       </div>
-
-  </section>
-<!--Section: Block Content-->
-
-
-  </main><!-- End #main -->
+    </div>
+  </main>
+  <br>
+  <br><!-- End #main -->
   
 
  <!-- ======= Footer ======= -->
