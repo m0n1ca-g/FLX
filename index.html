@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>FLX by Kohl's</title>
+    <title>FLX</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -16,6 +16,12 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -30,11 +36,13 @@
 
     <!-- Main CSS Files -->
 
-    <link href="assets/css/style2.css" rel="stylesheet">
+    <link href="assets/css/bluegrey.css" rel="stylesheet">
   </head>
   <body>
      
-    <!-- New Navigation Testing -->
+       <!-- New Navigation Testing -->
+       <section>
+        <div class="fixed-top">
 <!-- ======= Top Bar ======= -->
 <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
@@ -51,26 +59,22 @@
     </div>
   </section></header>
 
-  <!-- ======= Header ======= -->
+
+<!-- ======= Header ======= -->
 <header id="header">
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>FLX by Kohl's</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>FLX</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
+
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="drop-down"><a href="">Account</a>
-            <ul>
-              <li><a href="signin.html">Sign In</a></li>
-              <li><a href="signin.html">Create an Account</a></li></ul>
-              <li class="drop-down"><a href="">Shop</a><ul>
-              <li class="drop-down"><a href="#">Men</a><ul>
+            <li class="drop-down"><a href="men.html">Men</a><ul>
                 <li><a href="men.html">Bottoms</a></li>
                 <li><a href="men.html">Hoodies & Sweatshirts</a></li>
                 <li><a href="men.html">Loungewear</a></li>
@@ -79,7 +83,9 @@
                 <li><a href="men.html">Tops</a></li>
                 <li><a href="men.html">Workout Clothes</a></li>
                 <li><a href="men.html">Shop All</a></li></ul></li>
-              <li class="drop-down"><a href="#">Women</a><ul>
+              </li>
+    
+              <li class="drop-down"><a href="women.html">Women</a><ul>
                 <li><a href="women.html">Bottoms</a></li>
                 <li><a href="women.html">Hoodies & Sweatshirts</a></li>
                 <li><a href="women.html">Loungewear</a></li>
@@ -87,19 +93,28 @@
                 <li><a href="women.html">Swimwear</a></li>
                 <li><a href="women.html">Tops</a></li>
                 <li><a href="women.html">Workout Clothes</a></li>
-                <li><a href="women.html">Shop All</a></li></ul></li>    
-            </ul>
+                <li><a href="women.html">Shop All</a></li></ul></li>
+              </li>
+              <li><a href="about.html">About</a></li>
+          <li class="drop-down"><a href="">Account</a>
+            <ul>
+              <li><a href="signin.html">Sign In</a>
+                </li>
+              <li><a href="signin.html">Create an Account</a></li>
+              <li><a href="sizeguide.html">FLX Fit Guide</a>
+              </li>
+            </ul>       
           </li>
-          <li><a href="cart.html"><img src="assets/img/shopping_cart-24px.svg"></a></li>
+          <li><a href="cart.html">Cart</a></li>
       </nav><!-- .nav-menu -->
-
     </div>
-  </header><!-- End Header -->
-
- 
-
+  </header>
+</div>
+</section>
+<!-- End Header -->
+<div style="margin-top:40px"></div>
 <!-- ======= Hero Carousel ======= -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide item" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -108,16 +123,16 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="assets/img/zzhero7.jpg" alt="First slide">
+        <img class="d-block w-100" src="assets/img/zzhero7.jpg" alt="First slide" class="img-fluid" alt="Responsive image">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="assets/img/zzhero9.jpg" alt="Second slide">
+        <img class="d-block w-100" src="assets/img/zzhero4.jpeg" alt="Second slide" class="img-fluid" alt="Responsive image">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="assets/img/zzhero1.jpeg" alt="Third slide">
+        <img class="d-block w-100" src="assets/img/zzhero8.jpeg" alt="Third slide" class="img-fluid" alt="Responsive image">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="assets/img/kohlsactive.png" alt="Third slide">
+        <img class="d-block w-100" src="assets/img/zzhero6.jpeg" alt="Third slide" class="img-fluid" alt="Responsive image">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -132,10 +147,163 @@
 <!-- END HERO CAROUSEL -->
 
 <main id="main">
+<!-- TITLE - NEW PRODUCTS -->
+<div style="margin-top:70px"></div>
+<div class="container my-4">
+<h1>New Products</h1><sm><a href="women.html">Shop All</a></sm>
+  <hr class="new5">
+  <main>
+<!-- END TITLE - NEW PRODUCTS -->
+  <!-- ======= Featured Products ======= -->
+
+  <section class="text-center mb-4">
+    <div class="row wow fadeIn">
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div style="margin-top:70px"></div>
+      <div class="card-group">
+        <div class="view overlay">
+          <img src="assets/img/zz1.JPG" class="img-fluid" alt="Responsive image" height="100%" alt="";>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+    
+        <!--Card content-->
+        <div class="card-body text-center"><div style="margin-top:70px"></div>
+          <strong>
+            <a href="" class="dark-grey-text"> Lightweight, Weather Protected Stretch Jacket
+              <span class="grey-text"></span></a></strong> 
+          <h6>Sale $32.55</h6>
+      <small>Original $55.00</small>
+          <h6 class="font-weight-bold blue-text">
+          Pick up in store or ship it to your door!
+          </h6>
+          <button type="button" class="btn btn-secondary btn-sm">Add to cart!</button>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div style="margin-top:70px"></div>
+      <!--Card-->
+      <div class="card-group">
+    
+        <!--Card image-->
+        <div class="view overlay">
+          <img src="assets/img/zz2burtoncargo.JPG" class="img-fluid" alt="Responsive image" alt="";>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center"><div style="margin-top:70px"></div>
+          <!--Category & Title-->
+          <strong>
+            <a href="" class="dark-grey-text">Tailored, Weatherproof Cargo Pants 
+              <span class="grey-text"></span></a></strong> 
+          <h6>Sale $24.99</h6>
+      <small>Original $45.00</small>
+          <h6 class="font-weight-bold blue-text">
+          Pick up in store or ship it to your door!
+          </h6>
+          <button type="button" class="btn btn-secondary btn-sm">Add to cart!</button>
+    
+        </div>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <!--Grid column-->
+    
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div style="margin-top:70px"></div>
+      <!--Card-->
+      <div class="card-group">
+    
+        <!--Card image-->
+        <div class="view overlay">
+          <img src="assets/img/zz3.JPG" class="img-fluid" alt="Responsive image" alt="";>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center"><div style="margin-top:70px"></div>
+          <!--Category & Title-->
+          <strong>
+            <a href="" class="dark-grey-text">Super Soft Bamboo Lightweight Tank
+              <span class="grey-text"></span></a></strong> 
+          <h6>Sale $18.00</h6>
+      <small>Original $25.00</small>
+          <h6 class="font-weight-bold blue-text">
+          Pick up in store or ship it to your door!
+          </h6>
+          <button type="button" class="btn btn-secondary btn-sm">Add to cart!</button>
+        </div>
+        <!--Card content-->  
+      </div>
+      <!--Card-->
+    </div>
+    <!--Grid column-->
+    
+    <!--Fourth column-->
+    <div class="col-lg-3 col-md-6 mb-4"><div style="margin-top:70px"></div>
+      <div style="margin-top:70px"></div>
+      <!--Card-->
+      <div class="card-group">
+    
+        <!--Card image-->
+        <div class="view overlay">
+          <img src="assets/img/zz4.JPG" class="img-fluid" alt="Responsive image" height="100%" alt="";>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+    
+        <!--Card content-->
+        <div class="card-body text-center"><div style="margin-top:70px"></div>
+          <!--Category & Title-->
+          <strong>
+            <a href="" class="dark-grey-text">Breathable, 6 Pocket Nylon Shorts
+              <span class="grey-text"></span></a></strong> 
+          <h6>Sale $17.99</h6>
+      <small>Original $36.00</small>
+          <h6 class="font-weight-bold blue-text">
+          Pick up in store or ship it to your door!
+          </h6>
+          <button type="button" class="btn btn-secondary btn-sm">Add to cart!</button>
+        <!--Card content-->
+    
+      </div>
+      <!--Card-->
+    
+    </div>
+    <!--Fourth column-->
+    
+    </div>
+    <!--Grid row-->
+  </section></div></main>
+  <!-- ======= End Featured Products ======= -->
+  
 
 <!-- TITLE - FLX FEATURES -->
     <div class="container my-4">
-        <h1>FLX Features</h1>
+
         <hr class="new5">
 <!-- END TITLE - FLX FEATURES -->
 
@@ -144,27 +312,28 @@
          <div class="container">
            <div class="row" data-aos="fade-up">
              <div class="col-md-5">
-               <img src="assets/img/family.jpeg" class="img-fluid" alt="">
+               <img src="assets/img/Yoga.jpg" class="img-fluid img1" alt="">
              </div>
          <div class="col-md-7 pt-4">
-               <h3>The Perfect Fit</h3>
+               <h1>The Perfect Fit</h1>
                <p>
-                 Providing a large variety of sizes for both men and women to best
-                 fit your body and comfort.<br>
-                 <p><a href="sizeguide.html"><strong>Click here to use our size guide to find your best fit</strong></a>
+                Our assortment of athleisure clothing is size-inclusive, so no matter what size you need, FLX has it--
+                in a variety of colors and sustainable fabrics, too.<br>
+                 <p><a href="sizeguide.html"><strong>Find your FLX Fit using our sizing calculator!</strong></a>
                </p>
              </div>
            </div>
            <div style="margin-top:70px"></div>
            <div class="row" data-aos="fade-up">
              <div class="col-md-5 order-1 order-md-2">
-               <img src="assets/img/sustainable2.jpg" class="img-fluid" alt="">
+               <img src="assets/img/sustainable2.jpg" class="img-fluid img2" alt="">
              </div>
              <div class="col-md-7 pt-5 order-2 order-md-1">
-               <h3>Sustainable Materials</h3>
+               <h1>Sustainable Materials</h1>
                <p>
-                  Made with high quality materials to prevent any wear-and-tear 
-                  and provide you with durability you can trust.<br>
+                Our entire collection of versatile pieces for life at home or on-the-go, was made using sustainable materials.  
+                Recycled cotton is a more sustainable alternative to both conventionally and organically grown cotton, and it 
+                reduces the amount of cotton clothes in landfills.  
                   <p><a href="about.html"><strong>Learn More</strong></a>
                </p>
              </div>
@@ -172,174 +341,23 @@
            <div style="margin-top:70px"></div>
            <div class="row" data-aos="fade-up">
              <div class="col-md-5">
-               <img src="assets/img/zzhero9.jpg" class="img-fluid" alt="">
+               <img src="assets/img/index_co1.jpeg" class="img-fluid img3" alt="">
              </div>
              <div class="col-md-7 pt-5">
-               <h3>Complete Comfort</h3>
-               <p>Materials used in FLX are made for your comfort whether you are out, 
-                   working out or lounging at home.<br>
+               <h1>Complete Comfort</h1>
+               <p>Hemp has been used to make clothing for hundreds of years, requires very little water, and ours is 100% organic.  
+                 Besides being good for the environment,  hemp fibers keep you warm in winter and cool in summer.  
+                 And they feel great against your skin.
                    <p><a href="about.html"><strong>Learn More</strong></a>
                </p>
              </div></div></div></div>
        </section></NEW>
 <!-- FLX FEATURES -->
 
-<!-- TITLE - NEW PRODUCTS -->
-     <div style="margin-top:70px"></div>
-     <div class="container my-4">
-     <h1>New Products</h1><sm><a href="women.html">Shop All</a></sm>
-       <hr class="new5">
-<!-- END TITLE - NEW PRODUCTS -->
+
   
   
 
-<!-- ======= Featured Products ======= -->
-<div class="container my-4">
-<section class="text-center mb-4">
-  <div class="row wow fadeIn">
-  <div class="col-lg-3 col-md-6 mb-4">
-    <div class="card-group">
-      <div class="view overlay">
-        <img src="assets/img/zz1.JPG" class="img-fluid" alt="Responsive image" height="100%" alt="";>
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-  
-      <!--Card content-->
-      <div class="card-body text-center">
-        <strong>
-          <a href="" class="dark-grey-text"> Lightweight, Weather Protected Stretch Jacket
-            <span class="grey-text"></span></a></strong> 
-        <h6>Sale $32.55</h6>
-    <small>Original $55.00</small>
-        <h6 class="font-weight-bold blue-text">
-        Pick up in store or ship it to your door!
-        </h6>
-        <button type="button" class="btn btn-secondary btn-sm">Add to cart!</button>
-  
-      </div>
-      <!--Card content-->
-  
-    </div>
-    <!--Card-->
-  
-  </div>
-  <!--Grid column-->
-  
-  <!--Grid column-->
-  <div class="col-lg-3 col-md-6 mb-4">
-  
-    <!--Card-->
-    <div class="card-group">
-  
-      <!--Card image-->
-      <div class="view overlay">
-        <img src="assets/img/zz2burtoncargo.JPG" class="img-fluid" alt="Responsive image" height="100%" alt="";>
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-      <!--Card image-->
-  
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Category & Title-->
-        <strong>
-          <a href="" class="dark-grey-text">Tailored, Weatherproof Cargo Pants 
-            <span class="grey-text"></span></a></strong> 
-        <h6>Sale $24.99</h6>
-    <small>Original $45.00</small>
-        <h6 class="font-weight-bold blue-text">
-        Pick up in store or ship it to your door!
-        </h6>
-        <button type="button" class="btn btn-secondary btn-sm">Add to cart!</button>
-  
-      </div>
-      <!--Card content-->
-  
-    </div>
-    <!--Card-->
-  
-  </div>
-  <!--Grid column-->
-  
-  <!--Grid column-->
-  <div class="col-lg-3 col-md-6 mb-4">
-  
-    <!--Card-->
-    <div class="card-group">
-  
-      <!--Card image-->
-      <div class="view overlay">
-        <img src="assets/img/zz3.JPG" class="img-fluid" alt="Responsive image" height="100%" alt="";>
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-      <!--Card image-->
-  
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Category & Title-->
-        <strong>
-          <a href="" class="dark-grey-text">Super Soft Lightweight Tank
-            <span class="grey-text"></span></a></strong> 
-        <h6>Sale $18.00</h6>
-    <small>Original $25.00</small>
-        <h6 class="font-weight-bold blue-text">
-        Pick up in store or ship it to your door!
-        </h6>
-        <button type="button" class="btn btn-secondary btn-sm">Add to cart!</button>
-  
-      </div>
-      <!--Card content-->
-  
-    </div>
-    <!--Card-->
-  
-  </div>
-  <!--Grid column-->
-  
-  <!--Fourth column-->
-  <div class="col-lg-3 col-md-6 mb-4">
-  
-    <!--Card-->
-    <div class="card-group">
-  
-      <!--Card image-->
-      <div class="view overlay">
-        <img src="assets/img/zz4.JPG" class="img-fluid" alt="Responsive image" height="100%" alt="";>
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-      <!--Card image-->
-  
-      <!--Card content-->
-      <div class="card-body text-center">
-        <!--Category & Title-->
-        <strong>
-          <a href="" class="dark-grey-text">Breathable, 6 Pocket Nylon Shorts
-            <span class="grey-text"></span></a></strong> 
-        <h6>Sale $17.99</h6>
-    <small>Original $36.00</small>
-        <h6 class="font-weight-bold blue-text">
-        Pick up in store or ship it to your door!
-        </h6>
-        <button type="button" class="btn btn-secondary btn-sm">Add to cart!</button>
-      <!--Card content-->
-  
-    </div>
-    <!--Card-->
-  
-  </div>
-  <!--Fourth column-->
-  
-  </div>
-  <!--Grid row-->
-</section></div></main>
-<!-- ======= End Featured Products ======= -->
 
     <!-- DIVIDER -->
     <div class="container my-4">
@@ -418,9 +436,8 @@
         </div>
 
         <div class="col-lg-3 col-md-6 footer-info">
-          <h3>Flx by Kohl's</h3>
-          <p>Modern athleisure brand with active and casual apparel. Size-inclusive, available in plus and big & tall
-            sizes. Made using sustainable methods and materials.</p>
+          <h2>FLX</h2>
+          <p>Made using sustainable methods and materials, FLX is a modern, size inclusive athleisure brand for active & casual apparel.</p>
           <div class="social-links mt-3">
             <a href="https://twitter.com/kohls" class="twitter"><i class="bx bxl-twitter"></i></a>
             <a href="https://www.facebook.com/kohls/" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -428,7 +445,6 @@
             <a href="https://www.linkedin.com/company/kohls-department-stores/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           </div>
         </div>
-
       </div>
     </div>
   </div>
