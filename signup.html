@@ -100,7 +100,7 @@
             <ul>
               <li><a href="signin.html">Sign In</a>
                 </li>
-              <li><a href="signin.html">Create an Account</a></li>
+              <li><a href="signup.html">Create an Account</a></li>
               <li><a href="sizeguide.html">FLX Fit Guide</a>
               </li>
             </ul>       
@@ -130,7 +130,7 @@
           <li class="drop-down"><a href="">Account</a>
             <ul>
               <li><a href="signin.html">Sign In</a></li>
-              <li><a href="signup.html">Create an Account</a></li></ul>
+              <li><a href="signin.html">Create an Account</a></li></ul>
               <li class="drop-down active"><a href="">Shop</a><ul>
               <li class="drop-down active"><a href="men.html">Men</a><ul>
                 <li><a href="men.html">Bottoms</a></li>
@@ -161,63 +161,87 @@
   <!-- End Header -->
 <body>
 
-    <div class="main">
-
-        <!-- Sign up form -->
-        <section class="signup">
-            <div class="container">
-                <div class="signup-content">
-                    <div class="signup-form">
-                        <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form">
-                            <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="pass" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password">
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term">
-                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
-                            </div>
-                            <div class="form-group form-button">
-                                <a href="signupsuccess.html"><button type="button" class="btn btn-secondary btn-sm">Register</button></a>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="signup-image">
-                        <figure>
-                            <a href="signupsuccess.html">
-                                <span>
-                                  <img src="assets/img/signup_image.jpeg" class="img-fluid" alt="Responsive image" width="500px">
-                                </span>
-                            </a>
-                        </figure>
-                        <a href="signin.html" class="signup-image-link">I am already member</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        
-
-    </div>
-
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+   <div class="row">
+     <div class="col-md-12">
+       
+       <div class="row">
+         <div class="col-md-2">
+         </div>
+         <div class="col-md-4">
+           <h1 class="section-title">Create an Account</h1>
+           <form class="needs-validation" novalidate action="signupsuccess.html" method="get">
+     <div class="form-group">
+     <label for="firstName" class="form-label">First name</label>
+     <input type="text" class="form-control" id="firstName" placeholder="First" value="" required>
+     <div class="invalid-feedback">
+       Valid first name is required.
+     </div>
+   </div>
+ 
+   <div class="form-group">
+     <label for="lastName" class="form-label">Last name</label>
+     <input type="text" class="form-control" id="lastName" placeholder="Last" value="" required>
+     <div class="invalid-feedback">
+       Valid last name is required.
+     </div>
+   </div>
     
-
-</body>
-<div style="margin-top:70px"></div>
+     <div class="form-group">
+         <label for="email" class="form-label">Email </label>
+         <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+         <div class="invalid-feedback">
+           Please enter a valid email address
+         </div>
+     </div>
+     <div class="form-group">
+       <label for="pwd">Password:</label>
+       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+       <div class="valid-feedback">Valid.</div>
+       <div class="invalid-feedback">Please fill out this field.</div>
+     </div>
+     <div class="form-group">
+       <label for="pwd">Re-Type Password:</label>
+       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+       <div class="valid-feedback">Valid.</div>
+       <div class="invalid-feedback">Please fill out this field.</div>
+     </div>
+     <div class="form-group form-check">
+       <label class="form-check-label">
+         <input class="form-check-input" type="checkbox" name="remember" required> Do you agree to our <a ref="#">Terms and Conditions</a> ?
+         <div class="valid-feedback">Valid.</div>
+         <div class="invalid-feedback">Please agree to Terms and Conditions</div>
+       </label>
+     </div>
+     <button type="submit" class="btn btn-primary">Submit</button>
+         </div>
+         <div class="col-md-4">
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <img id="lol" src="assets/img/signup_image.jpeg" width="450px"  class="logo">
+         </div>
+         <div class="col-md-2">
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+  
+   
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+ 
+ 
+  </main>
 <!-- ======= Footer ======= -->
 <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
